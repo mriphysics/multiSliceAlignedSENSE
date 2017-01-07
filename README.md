@@ -27,6 +27,7 @@ contains functions used by the solvers: *fftGPU.m*, *ifftGPU.m*, *sense.m*, *ise
 contains functions for postprocessing: *gibbsRingingFilter.m*, *rotateMPS.m*, *writeNIFTI.m*.
 
 NOTE 1: When running the scripts, set the *gpu* variable to 0 if your system does not support NVIDIA GPU computing under MATLAB.
+
 NOTE 2: Computation times on an 8(16) x Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz 64GB RAM with a GeForce GTX TITAN X have been:
 * Figure 3 / Exp 1:
   * Conventional uncorrected SENSE reconstruction: 4".
