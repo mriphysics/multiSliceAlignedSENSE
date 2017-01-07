@@ -6,10 +6,10 @@ This repository provides tools to implement the reconstruction methods and repro
 The code has been developed in MATLAB and has the following structure:
 
 ###### ./
-contains the scripts for running the experiments included in Figures 3 and 4 of the manuscript, respectively: *multiSliceAlignedSENSE_Exp[1-2].m*.
+contains the scripts for running the experiments included in Figures 4 and 3 of the manuscript, respectively: *multiSliceAlignedSENSE_Exp[1-2].m*.
 
 ###### ./data
-contains the datasets used for simulations, respectively for Figures 3 and 4: *yT[1-2].mat*. Data generated when running the scripts is also stored in this folder.
+contains the datasets used for simulations, respectively for Figures 4 and 3: *yT[1-2].mat*. Data generated when running the scripts is also stored in this folder.
 
 ###### ./lib
 contains a package used to save the resulting reconstructions as nifti files: *NIfTI_20140122*.
@@ -29,13 +29,13 @@ contains functions for postprocessing: *gibbsRingingFilter.m*, *rotateMPS.m*, *w
 NOTE 1: When running the scripts, set the *gpu* variable to 0 if your system does not support NVIDIA GPU computing under MATLAB.
 
 NOTE 2: Computation times on an 8(16) x Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz 64GB RAM with a GeForce GTX TITAN X have been:
-* Figure 3 / Exp 1:
+* Figure 4 / Exp 1:
   * Conventional uncorrected SENSE reconstruction: 4".
   * Uncorrected reconstruction with slice profile filter: 17".
   * Corrected reconstruction without outlier rejection: 17'33".
   * Corrected reconstruction without through-plane motion: 12'55".
   * Fully corrected reconstruction: 15'14".
-* Figure 4 / Exp 2:
+* Figure 3 / Exp 2:
   * Conventional uncorrected SENSE reconstruction: 3".
   * Uncorrected reconstruction with slice profile filter: 21". 
   * Corrected reconstruction without outlier rejection: 
