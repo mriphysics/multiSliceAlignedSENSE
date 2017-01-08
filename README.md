@@ -20,9 +20,9 @@ contains functions used by the solvers: *fftGPU.m*, *ifftGPU.m*, *sense.m*, *ise
 ###### ./meth/pos
 contains functions for postprocessing: *gibbsRingingFilter.m*, *rotateMPS.m*, *writeNIFTI.m*.
 
-NOTE 1: Exemplary data is provided in files *yT[1-2]Comp.mat*, respectively for Figures 3 and 4. To run the code these datasets are expected to be placed in the folder
+NOTE 1: Exemplary data is provided in files *yT[1-2]Comp.mat*, respectively for Figures 3 and 4. To run the code the user is expected to create a folder
 ###### ./data
-Data generated when running the scripts is also stored in this folder.
+where these datasets should be located. Data generated when running the scripts is also stored in this folder.
 
 NOTE 2: When running the scripts, set the *gpu* variable to 0 if your system does not support NVIDIA GPU computing under MATLAB.
 
