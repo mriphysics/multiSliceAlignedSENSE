@@ -23,9 +23,15 @@ contains functions used by the solvers: *fftGPU.m*, *ifftGPU.m*, *sense.m*, *ise
 ###### ./meth/pos
 contains functions for postprocessing: *gibbsRingingFilter.m*, *rotateMPS.m*, *writeNIFTI.m*.
 
-NOTE 1: When running the scripts, set the *gpu* variable to 0 if your system does not support NVIDIA GPU computing under MATLAB.
+NOTE 1: Exemplary data is provided in files *yT[1-2]Comp.mat*, respectively for Figures 3 and 4. To run the code these datasets are expected to be placed in the folder
 
-NOTE 2: Computation times on an 8(16) x Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz 64GB RAM with a GeForce GTX TITAN X have been:
+###### ./data
+
+Data generated when running the scripts is also stored in this folder.
+
+NOTE 2: When running the scripts, set the *gpu* variable to 0 if your system does not support NVIDIA GPU computing under MATLAB.
+
+NOTE 3: Computation times on an 8(16) x Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz 64GB RAM with a GeForce GTX TITAN X have been:
 * Figure 4 / Exp 1:
   * Conventional uncorrected SENSE reconstruction: 4".
   * Uncorrected reconstruction with slice profile filter: 17".
