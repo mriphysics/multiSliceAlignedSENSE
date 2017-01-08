@@ -8,9 +8,6 @@ The code has been developed in MATLAB and has the following structure:
 ###### ./
 contains the scripts for running the experiments included in Figures 4 and 3 of the manuscript, respectively: *multiSliceAlignedSENSE_Exp[1-2].m*.
 
-###### ./data
-location to place the datasets used for simulations, respectively for Figures 3 and 4: *yT[1-2]Comp.mat*. Data generated when running the scripts is also stored in this folder.
-
 ###### ./lib
 contains a package used to save the resulting reconstructions as nifti files: *NIfTI_20140122*.
 
@@ -24,9 +21,7 @@ contains functions used by the solvers: *fftGPU.m*, *ifftGPU.m*, *sense.m*, *ise
 contains functions for postprocessing: *gibbsRingingFilter.m*, *rotateMPS.m*, *writeNIFTI.m*.
 
 NOTE 1: Exemplary data is provided in files *yT[1-2]Comp.mat*, respectively for Figures 3 and 4. To run the code these datasets are expected to be placed in the folder
-
 ###### ./data
-
 Data generated when running the scripts is also stored in this folder.
 
 NOTE 2: When running the scripts, set the *gpu* variable to 0 if your system does not support NVIDIA GPU computing under MATLAB.
