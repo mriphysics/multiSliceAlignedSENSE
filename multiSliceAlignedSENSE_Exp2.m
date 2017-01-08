@@ -17,7 +17,16 @@ debug=1;%0/1/2 increasing the amount of debug info provided
 % - Encoding values Encoding
 % - Rotation matrix Rot
 % - Image matrix Phi
-nameX=sprintf('%s/yT1',pathOu);load(nameX);
+
+%Code for uncompressed data
+%nameX=sprintf('%s/yT1',pathOu);load(nameX);
+%perc=0.95;
+%[S,y]=coilArrayCompression(S,y,perc,gpu);
+%save(sprintf('%s/yT1Comp',pathOu),'y','S','W','Ak','SlTh','SlOv','Encoding','Rot','Phi');
+%return
+
+%Load compressed data
+nameX=sprintf('%s/yT1Comp',pathOu);load(nameX);
 
 %Parameters fixed in this high level implementation
 parX.toler=1e-6;parX.gibbsRing=[0.2 0.2];parX.alpha=[20 10];%For T2MS
@@ -33,16 +42,8 @@ NA=size(Ak);NX=size(W);
 T=single(zeros([1 1 1 1 NA(5) NX(3) 6]));
 outlD=single(ones([1 1 NX(3) 1 NA(5)]));
 x=zeros(NX);
-
-%Coil array compression
-if debug==2;tstart=tic;end
-perc=0.95;
-[S,y]=coilArrayCompression(S,y,perc,gpu);
 mNorm=max(abs(y(:)));
-if debug==2;telapsed=toc(tstart);fprintf('Time coil compression: %.3fs\n',telapsed);end
 NS=size(S);NY=size(y);
-
-
 
 %recType=1: NMC
 %recType=2: NMC-SP 

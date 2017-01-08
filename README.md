@@ -9,7 +9,7 @@ The code has been developed in MATLAB and has the following structure:
 contains the scripts for running the experiments included in Figures 4 and 3 of the manuscript, respectively: *multiSliceAlignedSENSE_Exp[1-2].m*.
 
 ###### ./data
-contains the datasets used for simulations, respectively for Figures 4 and 3: *yT[1-2].mat*. Data generated when running the scripts is also stored in this folder.
+contains the datasets used for simulations, respectively for Figures 3 and 4: *yT[1-2]Comp.mat*. Data generated when running the scripts is also stored in this folder.
 
 ###### ./lib
 contains a package used to save the resulting reconstructions as nifti files: *NIfTI_20140122*.
@@ -38,7 +38,7 @@ NOTE 2: Computation times on an 8(16) x Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz
 * Figure 3 / Exp 2:
   * Conventional uncorrected SENSE reconstruction: 3".
   * Uncorrected reconstruction with slice profile filter: 21". 
-  * Corrected reconstruction without outlier rejection: 
-  * Corrected reconstruction without through-plane motion:
-  * Fully corrected reconstruction: 
+  * Corrected reconstruction without outlier rejection: 164'6".
+  * Corrected reconstruction without through-plane motion: 19'37".
+  * Fully corrected reconstruction: 107'37".
 
