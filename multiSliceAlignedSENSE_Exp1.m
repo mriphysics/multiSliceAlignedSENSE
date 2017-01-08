@@ -18,13 +18,6 @@ debug=1;%0/1/2 increasing the amount of debug info provided
 % - Rotation matrix Rot
 % - Image matrix Phi
 
-%Code for uncompressed data
-%nameX=sprintf('%s/yT2',pathOu);load(nameX);
-%perc=0.95;
-%[S,y]=coilArrayCompression(S,y,perc,gpu);
-%save(sprintf('%s/yT2Comp',pathOu),'y','S','W','Ak','SlTh','SlOv','Encoding','Rot','Phi');
-%return
-
 %Load compressed data
 nameX=sprintf('%s/yT2Comp',pathOu);load(nameX);
 

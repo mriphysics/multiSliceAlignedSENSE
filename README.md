@@ -9,16 +9,13 @@ The code has been developed in MATLAB and has the following structure:
 contains the scripts for running the experiments included in Figures 4 and 3 of the manuscript, respectively: *multiSliceAlignedSENSE_Exp[1-2].m*.
 
 ###### ./data
-contains the datasets used for simulations, respectively for Figures 3 and 4: *yT[1-2]Comp.mat*. Data generated when running the scripts is also stored in this folder.
+location to place the datasets used for simulations, respectively for Figures 3 and 4: *yT[1-2]Comp.mat*. Data generated when running the scripts is also stored in this folder.
 
 ###### ./lib
 contains a package used to save the resulting reconstructions as nifti files: *NIfTI_20140122*.
 
 ###### ./meth
 contains the solvers for motion and reconstruction as well as the alternating method described in the manuscript: *solve[X,T]MS2D.m*, *optimizeLevelMS2D.m*.
-
-###### ./meth/pre
-contains functions used for preprocessing: *coilArrayCompression.m*.
 
 ###### ./meth/pro
 contains functions used by the solvers: *fftGPU.m*, *ifftGPU.m*, *sense.m*, *isense.m*, *precomputeFactors3DTransform.m*, *transform3DSinc.m*, *transform3DSinc[Gradient,Hessian].m*, *filtering.m*, *mirroring.m*, *resampling.m*, *computeROI.m*, *extractROI.m*, *extractSlabs.m*, *sliceProfile.m*.
