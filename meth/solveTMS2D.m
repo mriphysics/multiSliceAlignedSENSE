@@ -149,7 +149,8 @@ for n=1:nT
             dH(:,s,t)=single(double(MHe)\double(dH(:,s,t)));
         end
     end
-    if ~thplc;dH([3 5 6],:,:)=0;end
+    if thplc==0;dH([1 2 4],:,:)=0;end
+    if thplc==1;dH([3 5 6],:,:)=0;end
     
     Tup=permute(dH,[4 5 6 7 2 3 1]);     
     Tup=T-Tup;            

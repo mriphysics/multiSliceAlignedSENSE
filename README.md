@@ -28,15 +28,17 @@ NOTE 2: When running the scripts, set the *gpu* variable to 0 if your system doe
 
 NOTE 3: Computation times on an 8(16) x Intel(R) Core(TM) i7-5960X CPU @ 3.00GHz 64GB RAM with a GeForce GTX TITAN X have been:
 * Figure 4 / Exp 1:
-  * Conventional uncorrected SENSE reconstruction: 4".
-  * Uncorrected reconstruction with slice profile filter: 17".
-  * Corrected reconstruction without outlier rejection: 17'33".
-  * Corrected reconstruction without through-plane motion: 12'55".
-  * Fully corrected reconstruction: 15'14".
+  * Conventional uncorrected SENSE reconstruction: 6".
+  * Uncorrected reconstruction with slice profile filter: 16".
+  * Corrected reconstruction without outlier rejection: 17'57".
+  * Corrected reconstruction without within-plane motion: 19'34".
+  * Corrected reconstruction without through-plane motion: 13'8".
+  * Fully corrected reconstruction: 15'3".
 * Figure 3 / Exp 2:
-  * Conventional uncorrected SENSE reconstruction: 3".
-  * Uncorrected reconstruction with slice profile filter: 21". 
-  * Corrected reconstruction without outlier rejection: 164'6".
-  * Corrected reconstruction without through-plane motion: 19'37".
-  * Fully corrected reconstruction: 107'37".
+  * Conventional uncorrected SENSE reconstruction: 5".
+  * Uncorrected reconstruction with slice profile filter: 22". 
+  * Corrected reconstruction without outlier rejection: 167'57".
+  * Corrected reconstruction without within-plane motion: 24'40".
+  * Corrected reconstruction without through-plane motion: 20'21".
+  * Fully corrected reconstruction: 104'30".
 

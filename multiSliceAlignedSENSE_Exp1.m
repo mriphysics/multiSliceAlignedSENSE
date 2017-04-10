@@ -25,10 +25,10 @@ nameX=sprintf('%s/yT2Comp',pathOu);load(nameX);
 parX.toler=1e-6;parX.gibbsRing=[0.4 0.4];parX.alpha=[40 20];%For T2MS
 
 
-Vpar.threeD=[0 1 1 1 1];
-Vpar.outl=[0 0 0 1 1];
-Vpar.correct=[0 0 1 1 1];
-Vpar.thplc=[0 0 1 0 1];
+Vpar.threeD=[0 1 1 1 1 1];
+Vpar.outl=[0 0 0 1 1 1];
+Vpar.correct=[0 0 1 1 1 1];
+Vpar.thplc=[0 0 2 0 1 2];
 
 %Initialization
 NA=size(Ak);NX=size(W);
@@ -41,10 +41,11 @@ NS=size(S);NY=size(y);
 %recType=1: NMC
 %recType=2: NMC-SP 
 %recType=3: MC-NOU
-%recType=4: MC-NTP
-%recType=5: MC
-suffix={'NMC','NMC-SP','MC-NOU','MC-NTP','MC'};
-suffixFull={'Conventional uncorrected SENSE (NMC)','Uncorrected with slice profile filter (NMC-SP)','Corrected without outlier rejection (MC-NOU)','Corrected without through-plane motion (MC-NTP)','Fully corrected (MC)'};
+%recType=4: MC-NWP
+%recType=5: MC-NTP
+%recType=6: MC
+suffix={'NMC','NMC-SP','MC-NOU','MC-NWP','MC-NTP','MC'};
+suffixFull={'Conventional uncorrected SENSE (NMC)','Uncorrected with slice profile filter (NMC-SP)','Corrected without outlier rejection (MC-NOU)','Corrected without within-plane motion (MC-NWP)','Corrected without through-plane motion (MC-NTP)','Fully corrected (MC)'};
 for recType=1:length(Vpar.threeD)
     if debug>0;fprintf('\nReconstructing %s...\n',suffixFull{recType});trec=tic;end
     %Initialization    
